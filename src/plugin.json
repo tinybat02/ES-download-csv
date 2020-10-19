@@ -1,0 +1,21 @@
+{
+  "type": "panel",
+  "name": "ES CSV",
+  "id": "id-es-csv-download",
+  "dataFormats": ["table"],
+  "info": {
+    "description": "ES CSV Download",
+    "author": {
+      "name": "Nam Le"
+    },
+    "keywords": [],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "6.3.x",
+    "plugins": []
+  }
+}
