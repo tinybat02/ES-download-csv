@@ -9014,7 +9014,6 @@ function (_super) {
   }
 
   MainPanel.prototype.componentDidMount = function () {
-    // console.log('___________yay____________', this.props.data);
     if (this.props.data.series.length > 0 && this.props.data.series.length == 4) {
       var series = this.props.data.series;
       var data = Object(_util_helpFunc__WEBPACK_IMPORTED_MODULE_3__["processData"])(series);
@@ -9208,7 +9207,7 @@ var csvProcess = function csvProcess(timeArr, valueArr, daily) {
 
   if (daily) {
     timeArr.map(function (time, idx) {
-      var dayobj = dayjs__WEBPACK_IMPORTED_MODULE_1__["unix"](time / 1000).tz('Europe/Athens');
+      var dayobj = dayjs__WEBPACK_IMPORTED_MODULE_1__["unix"](time / 1000).tz('Europe/Berlin');
       result.push({
         Timestamp: dayobj.format('YYYY-MM-DD'),
         Value: Math.round(valueArr[idx] * 100) / 100
@@ -9216,7 +9215,7 @@ var csvProcess = function csvProcess(timeArr, valueArr, daily) {
     });
   } else {
     timeArr.map(function (time, idx) {
-      var dayobj = dayjs__WEBPACK_IMPORTED_MODULE_1__["unix"](time / 1000).tz('Europe/Athens');
+      var dayobj = dayjs__WEBPACK_IMPORTED_MODULE_1__["unix"](time / 1000).tz('Europe/Berlin');
       result.push({
         Timestamp: dayobj.format('YYYY-MM-DD HH:00'),
         Value: Math.round(valueArr[idx] * 100) / 100

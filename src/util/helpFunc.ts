@@ -43,7 +43,7 @@ export const csvProcess = (timeArr: number[], valueArr: number[], daily = false)
   const result: CSVRow[] = [];
   if (daily) {
     timeArr.map((time, idx) => {
-      const dayobj = dayjs.unix(time / 1000).tz('Europe/Athens');
+      const dayobj = dayjs.unix(time / 1000).tz('Europe/Berlin');
       result.push({
         Timestamp: dayobj.format('YYYY-MM-DD'),
         Value: Math.round(valueArr[idx] * 100) / 100,
@@ -51,7 +51,7 @@ export const csvProcess = (timeArr: number[], valueArr: number[], daily = false)
     });
   } else {
     timeArr.map((time, idx) => {
-      const dayobj = dayjs.unix(time / 1000).tz('Europe/Athens');
+      const dayobj = dayjs.unix(time / 1000).tz('Europe/Berlin');
       result.push({
         Timestamp: dayobj.format('YYYY-MM-DD HH:00'),
         Value: Math.round(valueArr[idx] * 100) / 100,

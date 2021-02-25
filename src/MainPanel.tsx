@@ -27,7 +27,6 @@ export class MainPanel extends PureComponent<Props, State> {
     option: '',
   };
   componentDidMount() {
-    // console.log('___________yay____________', this.props.data);
     if (this.props.data.series.length > 0 && this.props.data.series.length == 4) {
       const series = this.props.data.series as Array<Frame>;
       const data = processData(series);
