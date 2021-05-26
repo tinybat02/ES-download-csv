@@ -9,9 +9,13 @@
       "name": "Nam Le"
     },
     "keywords": [],
+    "logos": {
+      "small": "img/CSV.svg",
+      "large": "img/CSV.svg"
+    },
     "screenshots": [],
     "version": "1.0.0",
-    "updated": "2021-02-25"
+    "updated": "2021-05-26"
   },
 
   "dependencies": {
